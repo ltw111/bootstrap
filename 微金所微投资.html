@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>标签页tab切换微金所为投资</title>
+    <link href="./lib/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <style>
+        .wjs-tab {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .row {
+
+            padding: 0 20px;
+        }
+
+        .wjs-tab .item {
+            width: 100%;
+            height: 190px;
+            margin-top: 20px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            position: relative;
+            background-color: #f8f8f8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .row-left {
+            width: 100%;
+            height: 100%;
+            padding-right: 80px;
+        }
+
+        .row-left h3 {
+            text-align: center;
+        }
+
+        .row-left ul {
+            list-style: none;
+            float: left;
+            padding-left: 10px;
+            margin: 0;
+        }
+
+        .row-left ul li {
+            margin-bottom: 13px;
+        }
+
+        .row-left>ul:last-child {
+
+            float:right;
+        }
+
+        .row-left>ul:last-child li {
+
+            text-align: right;
+        }
+
+        .row-right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-left: 1px dashed #000;
+            width: 80px;
+            height: 100%;
+        }
+
+        .row-right::after {
+            content: " ";
+            position: absolute;
+            left: -8px;
+            top: -8px;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .row-right::before {
+            content: " ";
+            position: absolute;
+            left: -8px;
+            bottom: -8px;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .row-right {
+            text-align: center;
+            padding-top: 70px;
+        }
+
+
+        .wjs-tab .item.item-2 {
+            background-color: red;
+            color: #fff;
+        }
+
+        .wjs-tab .item.item-2 h3 {
+            color: #fff;
+        }
+
+        .wjs-tab .item.item-2 img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wjs-tab">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="container-fulid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="item">
+                                <div class="row-left pull-left">
+                                    <a href="javascipt:;">
+                                        <h3>新手体验</h3>
+                                    </a>
+                                    <ul>
+                                        <li>起投金额11</li>
+                                        <li>0.01万</li>
+                                        <li>借款期限</li>
+                                        <li>10天</li>
+                                    </ul>
+                                    <ul>
+                                        <li>起投金额</li>
+                                        <li>0.01万</li>
+                                        <li>借款期限</li>
+                                        <li>10天</li>
+                                    </ul>
+
+                                </div>
+                                <div class="row-right pull-right">
+                                    <p>8</p>
+                                    <p>年利率</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="item item-2">
+                                <div class="row-left pull-left">
+                                    <a href="javascipt:;">
+                                        <h3>新手体验</h3>
+                                    </a>
+                                    <ul>
+                                        <li>起投金额11</li>
+                                        <li>0.01万</li>
+                                        <li>借款期限</li>
+                                        <li>10天</li>
+                                    </ul>
+                                    <ul>
+                                        <li>起投金额</li>
+                                        <li>0.01万</li>
+                                        <li>借款期限</li>
+                                        <li>10天</li>
+                                    </ul>
+
+                                </div>
+                                <div class="row-right pull-right">
+                                    <p>8</p>
+                                    <p>年利率</p>
+                                </div>
+                                <img src="./images/tiyan.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="item">
+                                <div class="row-left pull-left">
+                                    <a href="javascipt:;">
+                                        <h3>新手体验</h3>
+                                    </a>
+                                    <ul>
+                                        <li>起投金额11</li>
+                                        <li>0.01万</li>
+                                        <li>借款期限</li>
+                                        <li>10天</li>
+                                    </ul>
+                                    <ul>
+                                        <li>起投金额</li>
+                                        <li>0.01万</li>
+                                        <li>借款期限</li>
+                                        <li>10天</li>
+                                    </ul>
+
+                                </div>
+                                <div class="row-right pull-right">
+                                    <p>8</p>
+                                    <p>年利率</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="item">
+                                <div class="row-left pull-left">
+                                    <a href="javascipt:;">
+                                        <h3>新手体验</h3>
+                                    </a>
+                                    <ul>
+                                        <li>起投金额11</li>
+                                        <li>0.01万</li>
+                                        <li>借款期限</li>
+                                        <li>10天</li>
+                                    </ul>
+                                    <ul>
+                                        <li>起投金额</li>
+                                        <li>0.01万</li>
+                                        <li>借款期限</li>
+                                        <li>10天</li>
+                                    </ul>
+
+                                </div>
+                                <div class="row-right pull-right">
+                                    <p>8</p>
+                                    <p>年利率</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">2</div>
+            <div role="tabpanel" class="tab-pane" id="messages">3</div>
+            <div role="tabpanel" class="tab-pane" id="settings">4</div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./lib/js/bootstrap.min.js"></script>
+</body>
+
+</html>
